@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Academic Paper Summarizer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Academic Paper Summarizer</h1>
+
+    <form method="POST">
+        <textarea name="paper" placeholder="Paste academic paper text here..." required></textarea>
+        <button type="submit">Summarize</button>
+    </form>
+
+    {% if summary %}
+        <h2>Summary</h2>
+        <p>{{ summary }}</p>
+    {% endif %}
+</body>
+</html>
